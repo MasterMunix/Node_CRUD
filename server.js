@@ -16,10 +16,16 @@ app.use(express.json())
     const deleteQuote = require('./routes/deleteQuote');
 
 //Start app
-app.listen(5000, function() {//Change this from 3000 to 5000 to use get docker started 
+/*app.listen(5000, function() {//Change this from 3000 to 5000 to use get docker started 
     console.log('listening on 3000');
    
-});
+});*/
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
+
 
   //Create a Quote
   app.use("/quotes", create);
