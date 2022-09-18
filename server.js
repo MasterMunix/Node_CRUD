@@ -17,7 +17,7 @@ app.use(express.json())
 
 //Start app
 app.listen(5000, function() {//Change this from 3000 to 5000 to use get docker started 
-    console.log('listening on 3000');
+    console.log('listening on 5000');
    
 });
 
