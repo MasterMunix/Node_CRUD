@@ -14,6 +14,7 @@ app.use(express.json())
     const getQuote = require('./routes/updateQuotes/getQuote');
     const updateQuote = require('./routes/updateQuotes/updateQuote');
     const deleteQuote = require('./routes/deleteQuote');
+    const signUp = require('./routes/User/signUp');
 
 //Start app
 app.listen(5000, function() {//Change this from 3000 to 5000 to use get docker started 
@@ -36,6 +37,9 @@ app.listen(5000, function() {//Change this from 3000 to 5000 to use get docker s
  
   //new 
   app.use('/delete', deleteQuote);
+
+  //Sign up in the page
+  app.use("/signup", signUp);
 
 
 
