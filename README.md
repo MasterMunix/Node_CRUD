@@ -12,7 +12,7 @@ My code starts as follows:
     - **updateQuote**: It updates the selected quote.
   - **deleteQuote.js**: it deletes the selected quote from the database.  
   
-  # LIVE EXAMPLE: https://whispering-sea-28225.herokuapp.com/
+  # LIVE EXAMPLE: https://node-crud-wxdq.onrender.com/
 
 ***Learning Node.js, so enjoy it!***
 ---
